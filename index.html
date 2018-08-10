@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        ol {
+            counter-reset: item;
+        }
+
+        li {
+            display: block;
+        }
+
+        li:before {
+            content: counter(item) ") ";
+            counter-increment: item
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h4>vue parcel js</h4>
+    </div>
+    <footer>
+        <ol>
+            <li>
+                테스트
+            </li>
+            <li>test</li>
+        </ol>
+    </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>

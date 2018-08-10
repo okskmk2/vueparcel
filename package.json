@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "@vue/component-compiler-utils": "^2.1.2",
+    "cssnano": "^4.0.5",
+    "vue-template-compiler": "^2.5.17"
+  },
+  "dependencies": {
+    "babel-preset-env": "^1.7.0",
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.0",
+    "vue-router": "^3.0.1"
+  }
+}
