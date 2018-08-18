@@ -1,9 +1,21 @@
-@import "./flex.css";
-@import "./fontStyle.css";
 @import "./node_modules/handsontable/dist/handsontable.min.css";
 
-body {
-    margin:50px;
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSansCJKkr-Regular');
+    src: url(./NotoSansCJKkr-Regular.otf);  
+}
+
+.material-icons{
+    vertical-align: top;
+}
+
+body{
+    font-family: 'Noto Sans';
+    color:#333;
+    margin: 0;
 }
 
 ol {
