@@ -1,4 +1,4 @@
-# vueparcel with handsontable
+## vueparcel with handsontable
 
-parcel build
-parcel index.html
+# parcel build
+# parcel index.html
