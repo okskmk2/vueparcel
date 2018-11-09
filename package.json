@@ -1,17 +1,38 @@
 {
+  "name": "vueparcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
+    "axios": "^0.18.0",
+    "material-design-icons": "^3.0.1",
+    "vue": "^2.5.17",
+    "vue-hot-reload-api": "^2.3.1",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
   "devDependencies": {
-    "@vue/component-compiler-utils": "^2.1.2",
+    "@vue/component-compiler-utils": "^2.3.0",
     "babel-core": "^6.26.3",
-    "cssnano": "^4.0.5",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "node-sass": "^4.10.0",
     "vue-template-compiler": "^2.5.17"
   },
-  "dependencies": {
-    "@handsontable/vue": "^2.0.0",
-    "axios": "^0.18.0",
-    "babel-preset-env": "^1.7.0",
-    "handsontable": "^5.0.0",
-    "vue": "^2.5.17",
-    "vue-hot-reload-api": "^2.3.0",
-    "vue-router": "^3.0.1"
-  }
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okskmk2/vueparcel.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okskmk2/vueparcel/issues"
+  },
+  "homepage": "https://github.com/okskmk2/vueparcel#readme"
 }

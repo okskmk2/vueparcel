@@ -2,7 +2,7 @@
 <div>
     <header>
         <h1>
-        LSFWEB3
+        LSFWEB3<i class='material-icons'>home</i>
         </h1>
         </header>
     <h3>Vue component</h3>
