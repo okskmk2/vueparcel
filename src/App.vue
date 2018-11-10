@@ -1,5 +1,7 @@
 <template>
 <div class='app'>
+  <modals-container />
+  <v-dialog/>
     <Modal v-if="modalOpen"></Modal>
     <div class='main'>
     <header>

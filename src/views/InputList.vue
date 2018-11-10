@@ -6,8 +6,8 @@
             <button @click="resetInputList">Reset</button>
         </div>
         <template v-for="(InputItem, index) in inputItems">
-            <component :is="InputItem" :key="index">
-                <button @click="removeInputItem(index)" :key="index">Remove</button>
+            <component :is="InputItem" :key="index" :id="'item'+index">
+                <button @click="removeInputItem('item' + index)" :key="index">Remove</button>
             </component>
         </template>
         <hr>
@@ -26,23 +26,15 @@ export default {
   },
   methods: {
     resetInputList() {
-      this.inputItems = [InputItem];
+        this.inputItems = [];
     },
     addInputItem() {
-        this.inputItems.push(InputItem);
+      this.inputItems.push(InputItem);
     },
-    removeInputItem(index) {
-        console.log(this.inputItems.length);
-        console.log(index);
-        this.inputItems.splice(index, 1); // 내가 원하는 아이템을 삭제하지 않고 마지막 인덱스만 삭제하고 있다.
+    removeInputItem(id) {
+      document.getElementById(id).remove();
     },
     ...mapActions(["openModal", "closeModal"]),
-    openTest() {
-      this.openModal();
-    },
-    closeTest() {
-      this.closeModal();
-    }
   },
   components: {
     InputItem
@@ -50,7 +42,7 @@ export default {
 };
 </script>
 <style scoped>
-.btngroup{
-    margin-bottom: 0.5rem;
+.btngroup {
+  margin-bottom: 0.5rem;
 }
 </style>

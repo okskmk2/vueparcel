@@ -7,6 +7,7 @@ Vue.use(Vuex);
 export default new Vuex.Store({
     state: {
         modalOpen: false,
+        inputPaths:[],
     },
     getters: {
     },
@@ -17,6 +18,9 @@ export default new Vuex.Store({
         CLOSE_MODAL: (state) => {
             state.modalOpen = false
         },
+        ADD_INPUT_PATH: (state, path) =>{
+            state.inputPaths.push(path);
+        }
     },
     actions: {
         openModal: (context) => {       
