@@ -6,25 +6,24 @@ Vue.use(Vuex);
 
 export default new Vuex.Store({
     state: {
-        links: [
-            'test',
-            'test2'
-        ]
+        modalOpen: false,
     },
     getters: {
-        countLinks: state => state.links.length
     },
     mutations: {
-        ADD_LINK: (state, link) => {
-            state.links.push(link)
+        OPEN_MODAL: (state) => {
+            state.modalOpen = true
         },
-        REMOVE_LINK: (state, link) => {        // Add this:
-            state.links.splice(link, 1)
-        }
+        CLOSE_MODAL: (state) => {
+            state.modalOpen = false
+        },
     },
     actions: {
-        removeLink: (context, link) => {       // Add this:
-            context.commit("REMOVE_LINK", link)
+        openModal: (context) => {       
+            context.commit("OPEN_MODAL");
+        },
+        closeModal: (context) => {       
+            context.commit("CLOSE_MODAL")
         }
     }
 })

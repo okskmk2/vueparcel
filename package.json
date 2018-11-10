@@ -4,9 +4,6 @@
   "description": "",
   "main": "index.html",
   "dependencies": {
-    "@babel/core": "^7.1.5",
-    "@babel/polyfill": "^7.0.0",
-    "@babel/preset-env": "^7.1.5",
     "axios": "^0.18.0",
     "material-design-icons": "^3.0.1",
     "vue": "^2.5.17",
@@ -15,6 +12,9 @@
     "vuex": "^3.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.5",
     "@vue/component-compiler-utils": "^2.3.0",
     "babel-core": "^6.26.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
