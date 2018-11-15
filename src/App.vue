@@ -1,7 +1,5 @@
 <template>
 <div class='app'>
-  <modals-container />
-  <v-dialog/>
     <Modal v-if="modalOpen"></Modal>
     <div class='main'>
     <header>
@@ -12,7 +10,7 @@
             <router-link to='/inputList'>InputList</router-link>
         </nav>
     </header>
-    <router-view/>
+    <router-view></router-view>
     <footer>footer area</footer>
     </div>
 </div>

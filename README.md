@@ -1,4 +1,7 @@
 # vueparcel with handsontable
 
-## parcel build
-## parcel index.html
+## install
+npm i
+## serve
+parcel index.html
+
