@@ -10,7 +10,7 @@
             <router-link to='/inputList'>InputList</router-link>
         </nav>
     </header>
-    <router-view/>
+    <router-view></router-view>
     <footer>footer area</footer>
     </div>
 </div>
