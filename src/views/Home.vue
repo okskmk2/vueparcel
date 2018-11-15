@@ -15,7 +15,7 @@ export default {
         DelPopup,
         {
           hot_table: "data",
-          modal: this.$modal
+        //   modal: this.$modal
         },
         {
           name: "dynamic-modal",
