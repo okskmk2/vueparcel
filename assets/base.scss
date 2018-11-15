@@ -1,0 +1,75 @@
+// @import "@/node_modules/handsontable/dist/handsontable.min.css";
+@font-face {
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSansCJKkr-Regular');
+    src: url('NotoSansCJKkr-Regular.otf') format("opentype");
+}
+
+.material-icons {
+    vertical-align: top;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.jc-center {
+    justify-content: center;
+}
+
+.jc-end {
+    justify-content: flex-end;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+body {
+    font-family: 'Noto Sans';
+    color: #333;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+.app {
+    position: relative;
+}
+
+.container {
+    margin: 0 auto;
+    width: 60rem;
+    padding: 1rem 0;
+}
+
+header {
+    background-color: #f7f7f7;
+}
+
+footer {
+    background-color: #aaa;
+}
+
+.gnb {
+    margin-top: 1rem;
+    text-align: center;
+    &>a {
+        font-size: 1.25rem;
+        margin-right: 1rem;
+    }
+}
+
+.btngroup {
+    margin-bottom: 0.5rem;
+}

@@ -1,17 +1,21 @@
 <template>
 <div class='app'>
     <Modal v-if="modalOpen"></Modal>
-    <div class='main'>
+    <div>
     <header>
-        <nav><i class='material-icons'>account_circle</i></nav>
+      <div class='container'>
+        <nav class='text-right'><i class='material-icons'>account_circle</i></nav>
         <h1>Site Name</h1>
         <nav class='gnb'>
             <router-link to='/'>Home</router-link>
             <router-link to='/inputList'>InputList</router-link>
         </nav>
+      </div>
     </header>
-    <router-view></router-view>
-    <footer>footer area</footer>
+    <router-view class='container'></router-view>
+    <footer>
+      <div class='container'>designed by Baeun</div>
+    </footer>
     </div>
 </div>
 </template>
@@ -25,22 +29,7 @@ export default {
   components: {
     Modal
   },
-  mounted(){
-    
-  }
+  mounted() {}
 };
 </script>
-<style scoped>
-.app {
-  position: relative;
-}
-.main{
-    margin: 0 auto;
-    width: 40rem;
-    padding: 2rem;
-    border:1px solid #ccc;
-}
-.gnb>a{
-  margin-right: 1rem;
-}
-</style>
+

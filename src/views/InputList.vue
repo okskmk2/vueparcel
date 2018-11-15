@@ -10,7 +10,6 @@
                 <button @click="removeInputItem('item' + index)" :key="index">Remove</button>
             </component>
         </template>
-        <hr>
     </div>
 </template>
 <script>
@@ -41,8 +40,3 @@ export default {
   }
 };
 </script>
-<style scoped>
-.btngroup {
-  margin-bottom: 0.5rem;
-}
-</style>
