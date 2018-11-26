@@ -1,0 +1,56 @@
+const observer = {
+    handlers: {},
+    register(eventName, handler, context) {
+        let handlerArray = this.handlers[eventName];
+        if (undefined === handlerArray) {
+            handlerArray = this.handlers[eventName] = [];
+        }
+        handlerArray.push({
+            handler,
+            context
+        });
+    },
+    unregister(eventName, handler, context) {
+        let handlerArray = this.handlers[eventName];
+        if (undefined === handlerArray) return;
+        handlerArray.forEach((currentHandler, i) => {
+            if (handler === currentHandler['handler'] &&
+                context === currentHandler['context']) {
+                handlerArray.splice(i, 1);
+                return;
+            }
+        });
+    },
+
+    notify(eventName, data) {
+        let handlerArray = this.handlers[eventName];
+        if (undefined === handlerArray) return;
+
+        handlerArray.forEach(currentHandler => {
+            currentHandler['handler'].call(currentHandler['context'], data);
+        })
+    }
+};
+
+let boss = {};
+let manager = {};
+let programmer = {};
+
+
+boss.speak = (comment) => {
+    console.log(`boss ${comment}`);
+    observer.notify("bossSpeak", comment);
+};
+manager.listen = (comment) => {
+    console.log(`manager ${comment}`);
+    this.bossComment = comment;
+};
+observer.register("bossSpeak", manager.listen, manager);
+
+programmer.drop = (comment) => {
+    console.log(`programmer ${comment}`);
+};
+observer.register("bossSpeak", programmer.drop, programmer);
+
+// observer.unregister("bossSpeak", programmer.drop, programmer);
+boss.speak("... for an hour ...");
