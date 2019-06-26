@@ -1,7 +1,7 @@
-# vueparcel with handsontable
+# vue with parcel
 
 ## install
 npm i
 ## serve
-parcel index.html
+npm start
 
