@@ -5,6 +5,7 @@
   "main": "index.html",
   "dependencies": {
     "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
     "vue": "^2.5.17",
     "vue-hot-reload-api": "^2.3.1",
     "vue-router": "^3.0.1",
@@ -22,7 +23,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build index.html --public-url ./docs -d ./docs"
   },
   "repository": {
     "type": "git",
