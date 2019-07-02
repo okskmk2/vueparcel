@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html -d ./docs"
+    "build": "parcel build index.html --public-url ./ -d ./docs"
   },
   "repository": {
     "type": "git",
